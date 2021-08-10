@@ -1,0 +1,19 @@
+[
+    {
+        "type":"postgres",
+        "host":"localhost",
+        "port":35432,
+        "username":"postgres",
+        "password":"smapp123#",
+        "database":"finances",
+        "entities":[
+            "./src/modules/**/infra/typeorm/schemas/*.ts"
+        ],
+        "migrations":[
+            "./src/shared/typeorm/migrations/*.ts"
+        ],
+        "cli":{
+            "migrationsDir":"./src/shared/typeorm/migrations"
+        } 
+    }
+]
